@@ -1,0 +1,167 @@
+*{
+	margin: 0;
+}
+
+body{
+	background-color: #eeeeee;
+}
+
+.container-principal{
+	display: flex;
+	padding: 10px;
+	align-items: center;
+	justify-content: center;
+}
+
+.item-linha{
+	margin: 5px;
+}
+
+.item-coluna{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+}
+
+#modelo-celular{
+	padding: 10px 50px;
+}
+
+#celular-back, #celular-front{
+	width: 270px;
+	height: 500px;
+	border: 10px solid black;
+	border-radius: 25px;
+	background-color: white;
+}
+
+#celular-front{
+	margin-top: -450px;
+	margin-left: 50px;
+}
+
+.tela-celular{
+	width: 100%;
+	height: 90%;	
+	border: 30px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-radius: 10px 15px 15px 15px;	
+}
+
+.tela1{
+	animation-name: tela-celular;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+
+.tela2{
+	animation-name: tela-celular;
+	animation-duration: 7s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes tela-celular {
+	0%   {background-color: #ff7777;}
+	25%  {background-color: #e0fe73;}
+	50%  {background-color: #8ea9dc;}
+	75%  {background-color: #5ffd79;}
+	100% {background-color: #ff7777;}
+}
+
+.nome{
+	margin: auto;
+}
+
+input[type=text], input[type=password], button{
+	padding: 8px;
+	margin: auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width: 100%;	
+	box-sizing: border-box;	
+}
+
+button{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+form, .borda{
+	width: 300px;
+	padding: 30px;
+	border: 1px solid grey;
+	background-color: white;
+}
+
+.borda{
+	display: flex;
+	justify-content: center;
+}
+
+.borda a{
+	margin-left: 10px;
+}
+
+.msg-obter-app{
+	width: 300px;
+	padding: 10px 30px;
+	display: flex;
+	justify-content: center;
+}
+
+form h1{
+	text-align: center;
+	padding: 30px;
+}
+
+#sep-texto{
+	display: flex;
+	align-items: center;
+}
+
+.separador{
+	width: 45%;
+	height: 1px;
+	margin: 10px;
+	background-color: grey;
+}
+
+.link-entrar-face, .esqueceu-senha{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#letraF{
+	width: 10px;
+	height: 20px;
+	padding-left: 5px;
+	padding-right: 2px;
+	margin: 10px;
+	background-color: #333388;
+	color: white;
+	text-align: right;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.link-entrar-face a, .esqueceu-senha a{
+	text-decoration: none;
+}
+
+.links-stores{
+	display: flex;
+	width: 300px;
+	padding: 5px;
+}
+
+.img-store{
+	margin: 10px;
+}
+
+@media only screen and (max-width: 860px) {
+  #modelo-celular{
+	  display: none;
+  }
+}
